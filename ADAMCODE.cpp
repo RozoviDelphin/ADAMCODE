@@ -113,8 +113,17 @@ int main()
             case(4)://ЦАП(DAC)
             {
                 rc = modbus_read_registers(ctx , 0 , 2 tab_reg);
-                for (i = 0 ; i<rc ; i++)
+                for (i = 0 ; i < rc ; i++)
                     {
+                        if (tab_reg[i] > 32766)
+                        {
+                            printf("\n+");
+                        }
+                        if (tab_reg[i] < 32766)
+                        {
+                            printf("\n-");
+                        }
+                        
                         
                     }
                 break;
