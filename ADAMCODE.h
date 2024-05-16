@@ -23,7 +23,7 @@ namespace Project3
 	Char time;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// Ñâîäêà äëÿ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -32,13 +32,13 @@ namespace Project3
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: äîáàâüòå êîä êîíñòðóêòîðà
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// Îñâîáîäèòü âñå èñïîëüçóåìûå ðåñóðñû.
 		/// </summary>
 		~MyForm()
 		{
@@ -101,14 +101,14 @@ namespace Project3
 	protected:
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// Îáÿçàòåëüíàÿ ïåðåìåííàÿ êîíñòðóêòîðà.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 			/// <summary>
-			/// Требуемый метод для поддержки конструктора — не изменяйте 
-			/// содержимое этого метода с помощью редактора кода.
+			/// Òðåáóåìûé ìåòîä äëÿ ïîääåðæêè êîíñòðóêòîðà — íå èçìåíÿéòå 
+			/// ñîäåðæèìîå ýòîãî ìåòîäà ñ ïîìîùüþ ðåäàêòîðà êîäà.
 			/// </summary>
 		void InitializeComponent(void)
 		{
@@ -235,7 +235,7 @@ namespace Project3
 			this->SetV_1->Name = L"SetV_1";
 			this->SetV_1->Size = System::Drawing::Size(120, 49);
 			this->SetV_1->TabIndex = 15;
-			this->SetV_1->Text = L"Задать напряжение";
+			this->SetV_1->Text = L"Çàäàòü íàïðÿæåíèå";
 			this->SetV_1->UseVisualStyleBackColor = true;
 			this->SetV_1->UseWaitCursor = true;
 			this->SetV_1->Click += gcnew System::EventHandler(this, &MyForm::SetV_1_Click);
@@ -257,7 +257,7 @@ namespace Project3
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(95, 13);
 			this->label1->TabIndex = 19;
-			this->label1->Text = L"Тут будут ошибки";
+			this->label1->Text = L"Òóò áóäóò îøèáêè";
 			this->label1->UseWaitCursor = true;
 			// 
 			// label2
@@ -267,7 +267,7 @@ namespace Project3
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(126, 13);
 			this->label2->TabIndex = 20;
-			this->label2->Text = L"Напряжение на входах.";
+			this->label2->Text = L"Íàïðÿæåíèå íà âõîäàõ.";
 			this->label2->UseWaitCursor = true;
 			// 
 			// label4
@@ -277,7 +277,7 @@ namespace Project3
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(83, 13);
 			this->label4->TabIndex = 22;
-			this->label4->Text = L"Состояние ION";
+			this->label4->Text = L"Ñîñòîÿíèå ION";
 			this->label4->UseWaitCursor = true;
 			// 
 			// label5
@@ -303,7 +303,7 @@ namespace Project3
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(131, 13);
 			this->label6->TabIndex = 28;
-			this->label6->Text = L"Напряжение на выходах";
+			this->label6->Text = L"Íàïðÿæåíèå íà âûõîäàõ";
 			// 
 			// ADAM2
 			// 
@@ -332,7 +332,7 @@ namespace Project3
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(105, 13);
 			this->label10->TabIndex = 34;
-			this->label10->Text = L"Состояние нагрева";
+			this->label10->Text = L"Ñîñòîÿíèå íàãðåâà";
 			this->label10->UseWaitCursor = true;
 			// 
 			// TBar
@@ -373,7 +373,7 @@ namespace Project3
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(131, 13);
 			this->label13->TabIndex = 43;
-			this->label13->Text = L"Напряжение на выходах";
+			this->label13->Text = L"Íàïðÿæåíèå íà âûõîäàõ";
 			// 
 			// label14
 			// 
@@ -382,7 +382,7 @@ namespace Project3
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(126, 13);
 			this->label14->TabIndex = 42;
-			this->label14->Text = L"Напряжение на входах.";
+			this->label14->Text = L"Íàïðÿæåíèå íà âõîäàõ.";
 			this->label14->UseWaitCursor = true;
 			// 
 			// V_2
@@ -401,7 +401,7 @@ namespace Project3
 			this->SetV_2->Name = L"SetV_2";
 			this->SetV_2->Size = System::Drawing::Size(120, 49);
 			this->SetV_2->TabIndex = 40;
-			this->SetV_2->Text = L"Задать напряжение";
+			this->SetV_2->Text = L"Çàäàòü íàïðÿæåíèå";
 			this->SetV_2->UseVisualStyleBackColor = true;
 			this->SetV_2->UseWaitCursor = true;
 			this->SetV_2->Click += gcnew System::EventHandler(this, &MyForm::SetV_2_Click);
@@ -533,7 +533,7 @@ namespace Project3
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(52, 13);
 			this->label17->TabIndex = 56;
-			this->label17->Text = L"V нагрев";
+			this->label17->Text = L"V íàãðåâ";
 			this->label17->UseWaitCursor = true;
 			// 
 			// label18
@@ -543,11 +543,12 @@ namespace Project3
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(52, 13);
 			this->label18->TabIndex = 57;
-			this->label18->Text = L"A нагрев";
+			this->label18->Text = L"A íàãðåâ";
 			this->label18->UseWaitCursor = true;
 			// 
 			// PMT
 			// 
+			this->PMT->ImeMode = System::Windows::Forms::ImeMode::Off;
 			this->PMT->Location = System::Drawing::Point(436, 258);
 			this->PMT->Multiline = true;
 			this->PMT->Name = L"PMT";
@@ -593,7 +594,7 @@ namespace Project3
 			this->label19->Name = L"label19";
 			this->label19->Size = System::Drawing::Size(60, 13);
 			this->label19->TabIndex = 62;
-			this->label19->Text = L"ПМТ-4(Па)";
+			this->label19->Text = L"ÏÌÒ-4(Ïà)";
 			this->label19->UseWaitCursor = true;
 			// 
 			// label20
@@ -603,7 +604,7 @@ namespace Project3
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(68, 13);
 			this->label20->TabIndex = 63;
-			this->label20->Text = L"Edwards(Па)";
+			this->label20->Text = L"Edwards(Ïà)";
 			this->label20->UseWaitCursor = true;
 			// 
 			// label21
@@ -613,7 +614,7 @@ namespace Project3
 			this->label21->Name = L"label21";
 			this->label21->Size = System::Drawing::Size(65, 13);
 			this->label21->TabIndex = 65;
-			this->label21->Text = L"БПМ-025(А)";
+			this->label21->Text = L"ÁÏÌ-025(À)";
 			this->label21->UseWaitCursor = true;
 			// 
 			// label22
@@ -623,7 +624,7 @@ namespace Project3
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(87, 13);
 			this->label22->TabIndex = 64;
-			this->label22->Text = L"Температура(С)";
+			this->label22->Text = L"Òåìïåðàòóðà(Ñ)";
 			this->label22->UseWaitCursor = true;
 			// 
 			// MyForm
@@ -721,17 +722,18 @@ namespace Project3
 					this->PMT->Text = "";//100kpa - 10^-2 pa
 					this->BPM->Text = "";//0a - 1a
 					this->Vion->Text = "";//0V - 7kV
+					float x= ((tab_reg[3] - 32766) * 0.0003051944);
 					this->Edwards->Text += pow(10,(((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10));
-					this->PMT->Text += (0.191 /((tab_reg[3] - 32766) * 0.0003051944))- 0.009 - 0.001 * ((tab_reg[1] - 32766) * 0.0003051944);
+					this->PMT->Text +=(0.547) + ((-0.136) * x) + (0.0267 * x * x) + ((-0.00184) * x * x * x);
 					this->BPM->Text += (tab_reg[4] - 32766) * 0.0003051944 /10;
 					this->Vion->Text += (tab_reg[5]-32766)*0.0003051944 * 700;
-
+					//=0,547 + -0,136 *x + 0,0267*x^2 + -0,00184*x^3 PMT
 				}
 				else
 				{
 					const char* charstr = modbus_strerror(errno);
 					String^ clistr = gcnew String(charstr);
-					ERRORTEXT->Text += "Устройство не подключено" + clistr + "\r\n";
+					ERRORTEXT->Text += "Óñòðîéñòâî íå ïîäêëþ÷åíî" + clistr + "\r\n";
 				}
 				if (ADAM2->Value == 1)
 				{
@@ -767,7 +769,7 @@ namespace Project3
 				{
 					const char* charstr = modbus_strerror(errno);
 					String^ clistr = gcnew String(charstr);
-					ERRORTEXT->Text += "Устройство не подключено" + clistr + "\r\n";
+					ERRORTEXT->Text += "Óñòðîéñòâî íå ïîäêëþ÷åíî" + clistr + "\r\n";
 				}
 			}
 	private: System::Void ConADAM_Click(System::Object^ sender, System::EventArgs^ e)
@@ -805,7 +807,7 @@ namespace Project3
 		ERRORTEXT->Text = "";
 
 	}
-	private: System::Void IONBar_Click(System::Object^ sender, System::EventArgs^ e)//Дискретный D0
+	private: System::Void IONBar_Click(System::Object^ sender, System::EventArgs^ e)//Äèñêðåòíûé D0
 	{
 		if (IONBar->Value == 0)
 		{
