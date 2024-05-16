@@ -79,8 +79,6 @@ namespace Project3
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::TextBox^ textBox4;
 	private: System::Windows::Forms::TextBox^ Vion;
-
-
 	private: System::Windows::Forms::TextBox^ AT;
 	private: System::Windows::Forms::TextBox^ VT;
 	private: System::Windows::Forms::TextBox^ PMT;
@@ -718,6 +716,7 @@ namespace Project3
 						this->ERRORTEXT->Text += "Error!!" + "read input bits" + clistr + "\r\n";
 					}
 					IONBar->Value = tab_DI[1];
+					
 					this->Edwards->Text = "";//100kpa - 10^-7 pa
 					this->PMT->Text = "";//100kpa - 10^-2 pa
 					this->BPM->Text = "";//0a - 1a
