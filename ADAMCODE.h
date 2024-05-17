@@ -716,7 +716,6 @@ namespace Project3
 						this->ERRORTEXT->Text += "Error!!" + "read input bits" + clistr + "\r\n";
 					}
 					IONBar->Value = tab_DI[1];
-					
 					this->Edwards->Text = "";//100kpa - 10^-7 pa
 					this->PMT->Text = "";//100kpa - 10^-2 pa
 					this->BPM->Text = "";//0a - 1a
@@ -726,6 +725,18 @@ namespace Project3
 					this->PMT->Text +=(0.547) + ((-0.136) * x) + (0.0267 * x * x) + ((-0.00184) * x * x * x);
 					this->BPM->Text += (tab_reg[4] - 32766) * 0.0003051944 /10;
 					this->Vion->Text += (tab_reg[5]-32766)*0.0003051944 * 700;
+					if (x == 10)
+					{
+						this->ERRORTEXT->Text += "PMT <= 10^-2" + "\r\n";
+					}
+					if (pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10)) <= pow(-5, 10))
+					{
+						this->ERRORTEXT->Text += "Edwards <= 10^-5" + "\r\n";
+						tab_DO[1] = 1;
+						this->IONBar->Value = 1;
+						rc = modbus_write_bit(ctx1, 16, tab_DO[1]);
+					}
+
 					//=0,547 + -0,136 *x + 0,0267*x^2 + -0,00184*x^3 PMT
 				}
 				else
@@ -762,6 +773,16 @@ namespace Project3
 					this->Temp->Text += (tab_reg[3] - 32766) * 0.0003051944 *200;
 					this->AT->Text += (tab_reg[4] - 32766) * 0.0003051944 * 10;
 					this->VT->Text += (tab_reg[5] - 32766) * 0.0003051944 * 10;
+					if ((pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10)) <= pow(-5, 10)) && (IONBar->Value == 1))
+					{
+						tab_DO[1] = 1;
+						this->Tbar->Value = 1;
+						rc = modbus_write_bit(ctx2, 16, tab_DO[1]);
+						if (((TBar->Value == 1)) && (pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10))))
+						{
+
+						}
+					}
 
 				}
 				else
