@@ -773,8 +773,8 @@ namespace Project3
 			}
 	private: System::Void ConADAM_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		ctx1 = modbus_new_tcp("192.168.22.11", 502);
-		ctx2 = modbus_new_tcp("192.168.22.12", 502);
+		ctx1 = modbus_new_tcp("ip", port);
+		ctx2 = modbus_new_tcp("ip", port);
 		if (modbus_connect(ctx1) != -1)
 		{
 			this->ADAM1->Value = 1;
