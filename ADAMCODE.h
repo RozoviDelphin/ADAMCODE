@@ -78,8 +78,6 @@ namespace Project3
 	private: System::Windows::Forms::TextBox^ V_2;
 	private: System::Windows::Forms::TextBox^ ADAM1IP;
 	private: System::Windows::Forms::TextBox^ ADAM2IP;
-
-
 	private: System::Windows::Forms::TextBox^ Vion;
 	private: System::Windows::Forms::TextBox^ AT;
 	private: System::Windows::Forms::TextBox^ VT;
