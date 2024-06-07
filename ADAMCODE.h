@@ -76,8 +76,10 @@ namespace Project3
 	private: System::Windows::Forms::TextBox^ ERRORTEXT;
 	private: System::Windows::Forms::TextBox^ V_1;
 	private: System::Windows::Forms::TextBox^ V_2;
-	private: System::Windows::Forms::TextBox^ textBox3;
-	private: System::Windows::Forms::TextBox^ textBox4;
+	private: System::Windows::Forms::TextBox^ ADAM1IP;
+	private: System::Windows::Forms::TextBox^ ADAM2IP;
+
+
 	private: System::Windows::Forms::TextBox^ Vion;
 	private: System::Windows::Forms::TextBox^ AT;
 	private: System::Windows::Forms::TextBox^ VT;
@@ -94,6 +96,8 @@ namespace Project3
 	private: System::Windows::Forms::Timer^ timer1;
 	private: System::Windows::Forms::ProgressBar^ ADAM2;
 	private: System::Windows::Forms::ProgressBar^ TBar;
+	private: System::Windows::Forms::ProgressBar^ EDWBar;
+	private: System::Windows::Forms::ProgressBar^ PMTBar;
 	private:
 	private: System::ComponentModel::IContainer^ components;
 	protected:
@@ -137,8 +141,8 @@ namespace Project3
 			this->SetV_2 = (gcnew System::Windows::Forms::Button());
 			this->AO1_2 = (gcnew System::Windows::Forms::NumericUpDown());
 			this->AO0_2 = (gcnew System::Windows::Forms::NumericUpDown());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->ADAM1IP = (gcnew System::Windows::Forms::TextBox());
+			this->ADAM2IP = (gcnew System::Windows::Forms::TextBox());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label15 = (gcnew System::Windows::Forms::Label());
@@ -157,6 +161,8 @@ namespace Project3
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->label21 = (gcnew System::Windows::Forms::Label());
 			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->EDWBar = (gcnew System::Windows::Forms::ProgressBar());
+			this->PMTBar = (gcnew System::Windows::Forms::ProgressBar());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AO0_1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AO1_1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->AO1_2))->BeginInit();
@@ -198,7 +204,7 @@ namespace Project3
 			// 
 			// ERRORTEXT
 			// 
-			this->ERRORTEXT->Location = System::Drawing::Point(1, 439);
+			this->ERRORTEXT->Location = System::Drawing::Point(1, 475);
 			this->ERRORTEXT->Multiline = true;
 			this->ERRORTEXT->Name = L"ERRORTEXT";
 			this->ERRORTEXT->ReadOnly = true;
@@ -251,11 +257,11 @@ namespace Project3
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(416, 423);
+			this->label1->Location = System::Drawing::Point(416, 459);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(95, 13);
+			this->label1->Size = System::Drawing::Size(58, 13);
 			this->label1->TabIndex = 19;
-			this->label1->Text = L"Òóò áóäóò îøèáêè";
+			this->label1->Text = L"BugReport";
 			this->label1->UseWaitCursor = true;
 			// 
 			// label2
@@ -424,25 +430,25 @@ namespace Project3
 			this->AO0_2->TabIndex = 38;
 			this->AO0_2->UseWaitCursor = true;
 			// 
-			// textBox3
+			// ADAM1IP
 			// 
-			this->textBox3->Location = System::Drawing::Point(245, 5);
-			this->textBox3->Multiline = true;
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->ReadOnly = true;
-			this->textBox3->Size = System::Drawing::Size(124, 22);
-			this->textBox3->TabIndex = 46;
-			this->textBox3->UseWaitCursor = true;
+			this->ADAM1IP->Location = System::Drawing::Point(245, 5);
+			this->ADAM1IP->Multiline = true;
+			this->ADAM1IP->Name = L"ADAM1IP";
+			this->ADAM1IP->ReadOnly = true;
+			this->ADAM1IP->Size = System::Drawing::Size(124, 22);
+			this->ADAM1IP->TabIndex = 46;
+			this->ADAM1IP->UseWaitCursor = true;
 			// 
-			// textBox4
+			// ADAM2IP
 			// 
-			this->textBox4->Location = System::Drawing::Point(517, 5);
-			this->textBox4->Multiline = true;
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->ReadOnly = true;
-			this->textBox4->Size = System::Drawing::Size(124, 22);
-			this->textBox4->TabIndex = 47;
-			this->textBox4->UseWaitCursor = true;
+			this->ADAM2IP->Location = System::Drawing::Point(517, 5);
+			this->ADAM2IP->Multiline = true;
+			this->ADAM2IP->Name = L"ADAM2IP";
+			this->ADAM2IP->ReadOnly = true;
+			this->ADAM2IP->Size = System::Drawing::Size(124, 22);
+			this->ADAM2IP->TabIndex = 47;
+			this->ADAM2IP->UseWaitCursor = true;
 			// 
 			// label7
 			// 
@@ -625,6 +631,26 @@ namespace Project3
 			this->label22->Text = L"Òåìïåðàòóðà(Ñ)";
 			this->label22->UseWaitCursor = true;
 			// 
+			// EDWBar
+			// 
+			this->EDWBar->Location = System::Drawing::Point(540, 229);
+			this->EDWBar->Maximum = 1;
+			this->EDWBar->Name = L"EDWBar";
+			this->EDWBar->Size = System::Drawing::Size(26, 17);
+			this->EDWBar->Step = 1;
+			this->EDWBar->TabIndex = 66;
+			this->EDWBar->UseWaitCursor = true;
+			// 
+			// PMTBar
+			// 
+			this->PMTBar->Location = System::Drawing::Point(540, 261);
+			this->PMTBar->Maximum = 1;
+			this->PMTBar->Name = L"PMTBar";
+			this->PMTBar->Size = System::Drawing::Size(26, 17);
+			this->PMTBar->Step = 1;
+			this->PMTBar->TabIndex = 67;
+			this->PMTBar->UseWaitCursor = true;
+			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -632,6 +658,8 @@ namespace Project3
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->CausesValidation = false;
 			this->ClientSize = System::Drawing::Size(904, 741);
+			this->Controls->Add(this->PMTBar);
+			this->Controls->Add(this->EDWBar);
 			this->Controls->Add(this->label21);
 			this->Controls->Add(this->label22);
 			this->Controls->Add(this->label20);
@@ -650,8 +678,8 @@ namespace Project3
 			this->Controls->Add(this->label16);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label7);
-			this->Controls->Add(this->textBox4);
-			this->Controls->Add(this->textBox3);
+			this->Controls->Add(this->ADAM2IP);
+			this->Controls->Add(this->ADAM1IP);
 			this->Controls->Add(this->label13);
 			this->Controls->Add(this->label14);
 			this->Controls->Add(this->V_2);
@@ -727,13 +755,27 @@ namespace Project3
 					this->Vion->Text += (tab_reg[5]-32766)*0.0003051944 * 700;
 					if (x == 10)
 					{
+						this->PMTBar->Value = 1;
 						this->ERRORTEXT->Text += "PMT <= 10^-2" + "\r\n";
 					}
-					if (pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10)) <= pow(-5, 10))
+					else
 					{
-						this->ERRORTEXT->Text += "Edwards <= 10^-5" + "\r\n";
+						this->PMTBar->Value = 0;
+						rc = modbus_write_bit(ctx1, 16, tab_DO[1]);
+					}
+					int EDW = 0;
+					if (pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10)) <= (pow(10, -5)))
+					{
+						this->EDWBar->Value = 1;
 						tab_DO[1] = 1;
 						this->IONBar->Value = 1;
+						rc = modbus_write_bit(ctx1, 16, tab_DO[1]);
+						EDW += 1;
+					}
+					else
+					{
+						this->EDWBar->Value = 0;
+						tab_DO[1] = 1;
 						rc = modbus_write_bit(ctx1, 16, tab_DO[1]);
 					}
 
@@ -776,14 +818,9 @@ namespace Project3
 					if ((pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10)) <= pow(-5, 10)) && (IONBar->Value == 1))
 					{
 						tab_DO[1] = 1;
-						this->Tbar->Value = 1;
+						this->TBar->Value = 1;
 						rc = modbus_write_bit(ctx2, 16, tab_DO[1]);
-						if (((TBar->Value == 1)) && (pow(10, (((tab_reg[0]) - 32766) * 0.0003051944 * 1.5 - 10))))
-						{
-
-						}
 					}
-
 				}
 				else
 				{
@@ -794,8 +831,8 @@ namespace Project3
 			}
 	private: System::Void ConADAM_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		ctx1 = modbus_new_tcp("ip", port);
-		ctx2 = modbus_new_tcp("ip", port);
+		ctx1 = modbus_new_tcp("192.168.22.12", 502);
+		ctx2 = modbus_new_tcp("192.168.22.12", 502);
 		if (modbus_connect(ctx1) != -1)
 		{
 			this->ADAM1->Value = 1;
@@ -839,7 +876,7 @@ namespace Project3
 			IONBar->Value = 0;
 			tab_DO[1] = 1;
 		}
-		rc = modbus_write_bit(ctx1, 16, tab_DO[0]);
+		rc = modbus_write_bit(ctx1, 16, tab_DO[1]);
 	}
 	private: System::Void TBar_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -853,7 +890,7 @@ namespace Project3
 			TBar->Value = 0;
 			tab_DO[1] = 1;
 		}
-		rc = modbus_write_bit(ctx2, 16, tab_DO[0]);
+		rc = modbus_write_bit(ctx2, 16, tab_DO[1]);
 	}
 	private: System::Void SetV_1_Click(System::Object^ sender, System::EventArgs^ e)
 	{
